@@ -14,7 +14,7 @@ public class DefaultController {
     String index(@RequestParam(name="name", required=false, defaultValue="null") String name, Model model) {
         return "index";
     }
-
+    
     String aboutMeAction(Model info) {
         String name = "Ralfs";
         String surname = "Migals";
