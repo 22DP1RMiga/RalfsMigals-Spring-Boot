@@ -11,92 +11,26 @@
 </body>
 </html> -->
 
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
-    <style>
-
-        /* body {
-            background-color: lightblue;
-        }
-
-        h1 {
-            color: white;
-            text-align: center;
-        }
-
-        p {
-            font-family: verdana;
-            font-size: 20px;
-        } */
-
-        h1 {
-            color: aquamarine;
-            background-color: palevioletred;
-        }
-
-        p {
-            color: red;
-        }
-
-        button {
-            background-color: pink;
-            color: aqua;
-            border: 2px solid gray;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /*Add shadow glow*/
-        }
-
-
-
-    </style>
-</head>
-<body>
-    <hl>Tā ir mana mājaslapa, es testēju.</hl>
-
-    <p>
-        yoinky yoink
-        sussy baka
-    </p>
-
-    <button>Sūti man ziņu!</button>
-
-    (ordered list)
-        (listed item)
-    <ol>
-        <li>piens</li>
-        <li>maize</li>
-        <li>siers</li>
-        <li>kebabs</li>
-    </ol>
-
-    (divide)
-    <div>
-
-    </div>
-
-    <h3>Sveiki!</h3>
-    <p th:text="${age}"></p>
-</body>
-</html>
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AboutMe</title>
+
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <script src="/js/main.js" defer></script>
 </head>
 <body>
-    <p>Get your student <a href="/student">here</a></p>
     <h1>About Me page!</h1>
+
+    <p th:text="'Sveiks, tevi sauc ' + ${name}"></p>
+    <p th:text="'Tavs uzvārds: ' + ${surname}"></p>
+    <p th:text="'Tavs vecums ir ' + ${age}"></p>
+    <p th:text="'Tu esi ' + ${group} + ' grupā'"></p>
+
+    <p>Get your student <a href="/student">here</a></p>
+
     <p th:text="${name}"></p>
     <p th:text="${surname}"></p>
     <p th:text="${age}"></p>
