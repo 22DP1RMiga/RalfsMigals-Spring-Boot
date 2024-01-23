@@ -26,6 +26,17 @@ public class MoneyTest {
     }
 
     @Test
+    public void LessThanMethod() {
+        
+        Money mon1 = new Money(10, 0);
+        Money mon2 = new Money(3, 0);
+        Money mon3 = new Money(5, 0);
+
+        assertEquals(false, mon1.lessThan(mon2));
+        assertEquals(true, mon2.lessThan(mon3));
+    }
+
+    @Test
     public void MinusMethod() {
         Money mon1 = new Money(2, 80);
         Money mon2 = new Money(1, 90);
@@ -34,7 +45,5 @@ public class MoneyTest {
 
         assertEquals(0, result1.euros());
         assertEquals(90, result1.cents());
-
-
     }
 }
