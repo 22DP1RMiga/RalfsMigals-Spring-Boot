@@ -20,6 +20,7 @@ public class MainProgram {
         PaymentTerminal unicafeExactum = new PaymentTerminal();
 
         // For Part 2
+        // double change = unicafeExactum.eatAffordably(10);
         // change = unicafeExactum.eatAffordably(5);
         // System.out.println("remaining change " + change);
 
